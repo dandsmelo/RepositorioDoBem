@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div id="corpo">
+        <div id="esquerda"></div>
+
+        <div id="direita">
+            <form id="form">
+                <div id="inputinhos">
+                    <div class="input-box">
+                        <img src="img/CEP.png" alt="cep">
+                        <input type="text" id="cep" name="cep" maxlength="9" pattern="\d{5}-?\d{3}" placeholder="CEP" required>
+                    </div>
+                    <div class="input-box">
+                        <img src="img/CNPJ.png" alt="cnpj">
+                        <input name="cnpj" type="TEXT" maxlength="15"  placeholder="CNPJ" required />
+                    </div>
+                    <div class="input-box">
+                        <img src="img/NOME.png" alt="Nome">
+                        <input name="NOME" type="text" placeholder="Nome" required/>
+                    </div>
+                    <div class="input-box">
+                        <img src="img/EMAIL.png" alt="email">
+                        <input name="email" type="text" placeholder="E-mail" required/>
+                    </div>
+                    <div class="input-box">
+                        <img src="img/SENHA.png" alt="senha">
+                        <input name="senha" type="password" placeholder="Senha" required/>
+                    </div>
+                </div>
+                <div id="btn">
+                    <button type="subim">Cadastre-se</button>
+                    <a href="../login/login.html">Já possui uma conta?</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
