@@ -80,3 +80,92 @@ nav{
 #menu-btn{
     cursor: pointer;
 }
+
+#sec-1{
+    margin:100px;
+}
+
+#head-div{
+    display: inline-flex;
+    width: 100%;
+}
+
+#head-div>form{
+    right: 0;
+    position: fixed;
+    margin-right: 100px;
+}
+
+#busca{
+    border-radius: 50px;
+    border: solid #FFD100;
+    padding: 5px;
+}
+
+#btn-busca{
+    background-color: #FFD100;
+    color: black;
+    font-weight: 500;
+    border-radius: 0 50px 50px 0;
+    padding: 5px;
+    border-style: none;
+}
+
+#div-table{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+table{
+    width: 100%;
+}
+/*\configurações da tabela*/
+
+/*modal*/
+#modal{
+    margin: 30px 100px 30px 100px;
+    width: 30%;
+}
+
+#color{
+    border-radius: 40px 40px 0 40;
+    background-color: #FFD100;
+    height: 30px;
+}
+
+#box{
+    background-color: #fff;
+    border-radius: 40px ;
+    border: solid #BFBFBF;
+    padding:  0  20px 20px 20px;
+}
+
+#mini-box{
+    margin: 30px;
+}
+
+.input{
+    background-color: #F1EFEF;
+    border-radius: 20px;
+    border-style: none;
+    padding: 5px;
+    margin: 2px;
+}
+
+#mini-input{
+    display: flex;
+    margin: 0;
+}
+
+#btn-adc{
+    border-radius: 20px;
+    background-color: #FFD100;
+    color: black;
+    font-weight: 500;
+    padding: 5px;
+    border-style: none;
+    width: 40%;
+}

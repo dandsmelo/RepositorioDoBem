@@ -18,11 +18,12 @@ nav{
     left: 0;
     width: 100%;
 }
-
+/*Menu fechado*/
 #menu-list{
     display: none;
 }
 
+/*Menu aberto*/
 #menu-list.expandir{
     width: 200px;
     list-style: none;
@@ -31,6 +32,7 @@ nav{
     position: fixed;
 }
 
+/*item da lista do menu*/
 .item{
     height: 40px;
     width: 100%;

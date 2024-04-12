@@ -8,10 +8,12 @@
 </head>
 <body>
     <nav>
+        <!--Ícone do menu-->
         <span id="menu-btn">
             <img src="img/menu.png">
         </span>
         
+        <!--Menu-->
         <ul id="menu-list">
             <li class="item">
                 <a href="#">
@@ -27,10 +29,81 @@
             </li>
         </ul>
     
+        <!--Ícone do perfil-->
         <span id="user-icon">
             <img src="img/user.png">
         </span>
     </nav>
+
+    <section id="sec-1">
+        <div id="head-div">
+            <h1>Estoque</h1>
+
+            <form action="/pesquisar" method="get">
+                <input type="text" name="q" id="busca" placeholder="Pesquisar...">
+                <button type="submit" id="btn-busca">Add</button>
+            </form>
+        </div>
+        
+
+        <div id="div-table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Alimento</th>
+                        <th>Peso</th>
+                        <th>Validade</th>
+                        <th>Qtde.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arroz</td>
+                        <td>5k</td>
+                        <td>04/2026</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    
+
+    <div id="modal">
+        <div id="box">
+            <div id="color"></div>
+            <span class="mini-box">
+                <label>Alimento</label><br>
+                <input type="text" alt="Alimento" class="input">
+            </span>
+
+            <br>
+
+           <div id="mini-input">
+            <span class="mini-box">
+                <label>Peso</label><br>
+                <input type="text" alt="Peso" class="input">
+            </span>
+            
+            <span>
+                <label>Qted.</label><br>
+                <input type="number" alt="Quantidade" class="input">
+            </span>
+           </div>
+
+            <br>
+
+            <span class="mini-box">
+                <label>Validade</label><br>
+                <input type="date" alt="Alimento" class="input">
+            </span>
+
+            <button type="submit" id="btn-adc">Adicionar</button>
+        </div>
+    </div>
+
     <script src="estoque.js"></script>
 </body>
 </html>
