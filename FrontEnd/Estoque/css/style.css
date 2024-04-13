@@ -62,6 +62,7 @@ nav{
     text-align: center;
     margin-top: 10px;
     box-shadow: 0 2px 0 0 #BFBFBF;
+    background-color: #fff;
 }
 
 .txt:hover{
@@ -90,25 +91,57 @@ nav{
     width: 100%;
 }
 
-#head-div>form{
+h1{
+    font-size: 40px;
+}
+
+#div-box{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#box-busca{
     right: 0;
-    position: fixed;
-    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #busca{
-    border-radius: 50px;
+    border-radius: 50px 0 0 50px;
     border: solid #FFD100;
     padding: 5px;
+    height: 20px;
 }
 
 #btn-busca{
+    color: black;
+    font-weight: 600;
+    border-radius: 0 50px 50px 0;
+    padding: 6px;
+    margin: 0;
+    height: 24px;
+    border-style: none;
+    background-color: #FFD100;
+    cursor: pointer;
+}
+
+#btn-add{
     background-color: #FFD100;
     color: black;
-    font-weight: 500;
-    border-radius: 0 50px 50px 0;
-    padding: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 100%;
+    width: 30px;
+    height: 25px;
+    padding: 6px;
     border-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #div-table{
@@ -121,51 +154,128 @@ nav{
 
 table{
     width: 100%;
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
 }
 /*\configurações da tabela*/
+th{
+    align-items: center;
+    height: 40px;
+}
+
+.icon-th{
+    margin-right: 2px;
+}
+
+th, tbody{
+    border-left: none;
+    border-right: none;
+}
+
+.action{
+    background-color: #FFD100;
+    color: black;
+    font-weight: 600;
+    border: none;
+    height: 25px;
+    padding: 6px;
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #FFD100;
+}
 
 /*modal*/
+#container-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 #modal{
-    margin: 30px 100px 30px 100px;
-    width: 30%;
+    width: 40%;
+    border-radius: 40px;
+    align-items: center;
+    text-align: center;
+    display: none;
+    box-shadow: 5px 5px 5px #BFBFBF;
+    position: fixed;
+    top: 0;
+    margin-top: 5%;
 }
 
 #color{
-    border-radius: 40px 40px 0 40;
     background-color: #FFD100;
-    height: 30px;
+    height: 50px;
+    border-radius: 40px 40px 0 0 ;
 }
 
-#box{
-    background-color: #fff;
-    border-radius: 40px ;
-    border: solid #BFBFBF;
-    padding:  0  20px 20px 20px;
+#div-inputs{
+    background-color: #ffff;
+    border-radius: 0 0 40px 40px ;
+    padding:  20px  20px 20px 20px;
 }
 
 #mini-box{
     margin: 30px;
+    text-align: left;
 }
 
 .input{
     background-color: #F1EFEF;
     border-radius: 20px;
     border-style: none;
-    padding: 5px;
-    margin: 2px;
+    padding: 5px 20px 5px 20px;
+    margin: 5px 2px;
+    width: 80%;
+    height: 25px;
 }
 
 #mini-input{
     display: flex;
-    margin: 0;
+    margin: 30px;
+    justify-content: space-between;
+    
 }
 
 #btn-adc{
     border-radius: 20px;
     background-color: #FFD100;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 15px;
     padding: 5px;
     border-style: none;
     width: 40%;
+    margin-top: 10px;
+    height: 40px;
+    cursor: pointer;
 }
+
+#div-btn{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -35,72 +35,95 @@
         </span>
     </nav>
 
+    <!--Seção 1-->
     <section id="sec-1">
+
+        <!--Head do estoque-->
         <div id="head-div">
             <h1>Estoque</h1>
 
-            <form action="/pesquisar" method="get">
-                <input type="text" name="q" id="busca" placeholder="Pesquisar...">
-                <button type="submit" id="btn-busca">Add</button>
-            </form>
+            <div id="div-box">
+                <div id="box-busca">
+                    <input type="text" name="q" id="busca" placeholder="Pesquisar...">
+                    <img src="img/search.png" id="btn-busca">
+                    <button type="submit" id="btn-add">+</button>
+                </div>
+            </div>
         </div>
         
-
+        <!--Tabela do estoque-->
         <div id="div-table">
-            <table border="1">
+            <table border="1" id="table">
                 <thead>
                     <tr>
-                        <th>Alimento</th>
-                        <th>Peso</th>
-                        <th>Validade</th>
-                        <th>Qtde.</th>
+                        <th></th>
+                        <th>
+                            <img src="img/dish.png" class="icon-th">
+                            <label>Alimento</label>
+                        </th>
+                        <th>
+                            <img src="img/weight.png" class="icon-th">
+                            <label>Peso</label>
+                        </th>
+                        <th>
+                            <img src="img/calendar.png" class="icon-th">
+                            <label>Validade</label>
+                        </th>
+                        <th>
+                            <img src="img/boxes.png" class="icon-th">
+                            <label>Quantia</label>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Arroz</td>
-                        <td>5k</td>
-                        <td>04/2026</td>
-                        <td>3</td>
-                    </tr>
+                    
+                        <!--Onde os dados serão inseridos-->
+                    
                 </tbody>
             </table>
         </div>
+
+        <!--Botões de ação-->
+        <button class="action" id="btn-delete">Excluir</button>
+        <button class="action" id="btn-relatorio">Baixar</button>
+
     </section>
 
-
-    
-
-    <div id="modal">
-        <div id="box">
+    <!--Modal-->
+    <div id="container-modal">
+        <div id="modal">
             <div id="color"></div>
-            <span class="mini-box">
-                <label>Alimento</label><br>
-                <input type="text" alt="Alimento" class="input">
-            </span>
-
-            <br>
-
-           <div id="mini-input">
-            <span class="mini-box">
-                <label>Peso</label><br>
-                <input type="text" alt="Peso" class="input">
-            </span>
-            
-            <span>
-                <label>Qted.</label><br>
-                <input type="number" alt="Quantidade" class="input">
-            </span>
-           </div>
-
-            <br>
-
-            <span class="mini-box">
-                <label>Validade</label><br>
-                <input type="date" alt="Alimento" class="input">
-            </span>
-
-            <button type="submit" id="btn-adc">Adicionar</button>
+    
+            <span class="close">&times;</span>
+            <div id="div-inputs">
+                <span class="mini-box">
+                    <label>Alimento</label><br>
+                    <input type="text" alt="Alimento" class="input" id="input01">
+                </span>
+    
+                <br>
+    
+               <div id="mini-input">
+                <span class="mini-box">
+                    <label>Peso</label><br>
+                    <input type="text" alt="Peso" class="input" id="input02">
+                </span>
+                
+                <span>
+                    <label>Quantidade</label><br>
+                    <input type="number" alt="Quantidade" class="input" id="input03">
+                </span>
+               </div>
+    
+                <span class="mini-box">
+                    <label>Validade</label><br>
+                    <input type="month" alt="Alimento" class="input" id="input04">
+                </span>
+    
+                <div id="div-btn">
+                    <button type="submit" id="btn-adc">Adicionar</button>
+                </div>
+            </div>
         </div>
     </div>
 
